@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   scope '/api', defaults: { format: :json } do
     resources :categories, only: [:index] 
-    resources :restaurantes, only: [:index, :show]
+    resources :restaurants, only: [:index, :show]
     resources :orders, only: [:create, :show]
     resources :available_cities, only: [:index]
   end
